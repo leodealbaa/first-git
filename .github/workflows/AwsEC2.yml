@@ -1,0 +1,12 @@
+name: Deno
+
+on:
+  push:
+    branches: ["feature/HOLA-1942"]
+
+jobs:
+  EC2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test
+        run: echo "AWS EC2"
